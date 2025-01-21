@@ -45,13 +45,13 @@
 1. **Clone repository**
 
 ```
-git clone https://github.com/AlpacaMale/kiosk
+git clone https://github.com/AlpacaMale/music-chart-scraper
 ```
 
 2. **Install dependency**
 
 ```
-pip install -r server/requirements.txt
+pip install -r requirements.txt
 ```
 
 3. **Run main.py**
