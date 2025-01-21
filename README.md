@@ -45,7 +45,7 @@
 1. **Clone repository**
 
 ```
-git clone https://github.com/AlpacaMale/music-chart-scraper
+git clone https://github.com/AlpacaMale/music-rank-tracker
 ```
 
 2. **Install dependency**
