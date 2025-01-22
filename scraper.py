@@ -45,8 +45,8 @@ class Scraper:
         self.to_csv(BUGS)
 
     def genie_scrape(self, url):
-        for index in (1, 2):
-            response = requests.get(f"{url}{index}", headers=self.headers)
+        for page in (1, 2):
+            response = requests.get(f"{url}{page}", headers=self.headers)
             soup = BeautifulSoup(response.content, "html.parser")
             musics = soup.select("tbody > .list")
             for music in musics:
