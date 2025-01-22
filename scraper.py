@@ -1,11 +1,13 @@
 import requests
-from bs4 import BeautifulSoup
 import csv
+import os
+from bs4 import BeautifulSoup
 from datetime import date
 
 MELON = "melon"
 BUGS = "bugs"
 GENIE = "genie"
+DATA_PATH = "./data"
 
 
 class Scraper:
@@ -69,8 +71,12 @@ class Scraper:
         }
 
     def to_csv(self, file_name):
+        # rank_data 디렉토리가 없으면 rank_data 디렉토리 생성
+        if not os.path.exists(DATA_PATH):
+            os.makedirs(DATA_PATH)
+
         with open(
-            f"data/{date.today()}-{file_name}.csv", "a", encoding="utf-8"
+            f"{DATA_PATH}/{date.today()}-{file_name}.csv", "a", encoding="utf-8"
         ) as file:
             fieldnames = ["rank", "title", "artist", "album", "img_url"]
             writer = csv.DictWriter(file, fieldnames=fieldnames)
