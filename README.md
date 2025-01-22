@@ -53,7 +53,7 @@ git clone https://github.com/AlpacaMale/music-rank-tracker
 2. **Change directory**
 
 ```
-cd music-chart-scraper
+cd music-rank-tracker
 ```
 
 3. **Install dependency**
