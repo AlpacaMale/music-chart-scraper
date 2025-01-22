@@ -20,7 +20,7 @@
 - [x] **export rank data**: 스크래핑한 데이터를 csv 파일로 export 하는 로직 구현
 - [x] **rank tracker**: 어제의 랭크와 비교해서 오르고 내린 만큼을 표현하는 로직 구현
 - [x] **export rank track data**: 랭크를 추적한 데이터를 csv 파일로 export 하는 로직 구현
-- [ ] **comment out**: 주석 달기
+- [x] **comment out**: 주석 달기
 - [ ] **handle exception**: 예외 처리
 
 ## 패키지 구조
@@ -50,13 +50,19 @@
 git clone https://github.com/AlpacaMale/music-rank-tracker
 ```
 
-2. **Install dependency**
+2. **Change directory**
+
+```
+cd music-chart-scraper
+```
+
+3. **Install dependency**
 
 ```
 pip install -r requirements.txt
 ```
 
-3. **Run main.py**
+4. **Run main.py**
 
 ```
 python main.py
