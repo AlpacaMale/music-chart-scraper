@@ -1,5 +1,5 @@
 from scraper import Scraper, MELON, BUGS, GENIE
-from ranktracker import RankTracker
+from ranktracker import track
 
 
 MELON_URL = "https://www.melon.com/chart/index.htm"
@@ -11,8 +11,6 @@ scraper.melon_scrape(MELON_URL)
 scraper.bugs_scrape(BUGS_URL)
 scraper.genie_scrape(GENIE_URL)
 
-
-ranktracker = RankTracker()
-ranktracker.track(MELON)
-ranktracker.track(BUGS)
-ranktracker.track(GENIE)
+track(MELON)
+track(BUGS)
+track(GENIE)
